@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.visa-check-page {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  line-height: 1.4;
+  min-height: 100vh;
+}
+
+/* Top Links Bar */
+.toplinks-container {
+  background: #061B36;
+  text-align: right;
+  padding: 8px 0;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.toplinks-content {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+.toplinks-content li {
+  margin-left: 30px;
+}
+
+.toplinks-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.toplinks-content a:hover {
+  text-decoration: underline;
+}
+
+/* Header Bar */
+.header-bar {
+  background: #061B36;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu-open-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-open-btn:hover {
+  background: #3b82f6;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.search-btn:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Background */
+.hero-bg {
+  background: #004D8E;
+  flex: 1;
+  background-image: url('https://immi.homeaffairs.gov.au/PublishingImages/Apple-tree-flowers.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  background: #004D8E;
+  z-index: 1;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 45%;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #004D8E 0%, rgba(0, 77, 142, 0.3) 30%, transparent 100%);
+  z-index: 1;
+}
+
+/* Hero Block */
+.hero-block {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0;
+  background: transparent;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-block-content {
+  max-width: 50%;
+}
+
+/* Breadcrumbs */
+.breadcrumbs-container {
+  margin-bottom: 30px;
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: '>';
+  margin: 0 10px;
+  color: white;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* Page Title */
+.page-title {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Tabs Container */
+.tabs-container {
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.tabs-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 2px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.tab {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px 8px 0 0;
+}
+
+.tab.active {
+  background: white;
+}
+
+.tab a {
+  display: block;
+  padding: 18px 24px;
+  color: #061B36;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  min-width: 180px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tab.active a {
+  font-weight: bold;
+}
+
+.tab:hover:not(.active) {
+  background: white;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 0 0 auto;
+}
+
+.tab-content {
+  background: white;
+  min-height: 500px;
+  padding: 40px 0;
+}
+
+/* CTA Section */
+.bg-grey {
+  background: #f8f9fa;
+  padding: 40px 0;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+/* Form Styling */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.visa-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+}
+
+.help-text {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.col-sm-6 {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.col-sm-12 {
+  width: 100%;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+/* Search Icon */
+.icon-search::before {
+  content: '🔍';
+  font-size: 18px;
+}
+
+/* Menu Icon */
+.menu-icon {
+  width: 22px;
+  height: 14px;
+  fill: white;
+}
+
+/* Hidden elements */
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .header-bar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .logo-container {
+    order: -1;
+  }
+
+  .logo-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .page-title {
+    font-size: 32px;
+  }
+
+  .hero-block-content {
+    max-width: 100%;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .tab a {
+    min-width: 140px;
+    font-size: 12px;
+    padding: 15px 15px;
+  }
+
+  .toplinks-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .toplinks-content li {
+    margin: 5px 0;
+    margin-left: 0;
+  }
+
+  .col-sm-6 {
+    width: 100%;
+    display: block;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero-bg::before {
+    right: 0;
+  }
+
+  .hero-bg::after {
+    left: 0;
+  }
+}
