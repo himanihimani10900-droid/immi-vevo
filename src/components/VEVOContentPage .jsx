@@ -104,14 +104,14 @@ const VEVOContentPage = () => {
                   VEVO can only provide current visa information about visa holders whose details are available in our systems. 
                   You may not have a searchable record if you migrated to Australia before 1990 and have not travelled out of 
                   Australia. If this applies to you, you may need to request an{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     electronic record of your permanent visa
                   </a>.
                 </p>
 
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
                   Some people may have an ImmiCard issued by us. You can check your{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     eligibility for an ImmiCard
                   </a>. Government 
                   agencies can then use the ImmiCard to check a visa holder's commencement of identity in Australia.
@@ -134,7 +134,7 @@ const VEVOContentPage = () => {
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
                   Everyone working in Australia has basic rights and protections in the workplace, including minimum pay and 
                   conditions. Learn more about{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     workplace rights in Australia
                   </a>.
                 </p>
@@ -147,19 +147,19 @@ const VEVOContentPage = () => {
                 </h2>
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed mb-4">
                   You can use VEVO to{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 border-b border-blue-600 pb-1 break-words">
+                  <a 
+                    href="https://online.immiinfo.com/gov.au/lusc/visaCheck" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 break-words"
+                  >
                     check your visa details and conditions
-                    <span className="inline-block ml-1">
-                      <svg className="w-3 h-3" viewBox="0 0 12 12" fill="currentColor">
-                        <path d="M6.5 1.75a.75.75 0 0 0-1.5 0V5H1.75a.75.75 0 0 0 0 1.5H5v3.25a.75.75 0 0 0 1.5 0V6.5h3.25a.75.75 0 0 0 0-1.5H6.5V1.75Z"/>
-                      </svg>
-                    </span>
                   </a>. Use VEVO to send proof of your visa conditions 
                   to others, for example, employers, landlords or the government of a country you would like to visit.
                 </p>
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
                   Learn{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     how to use VEVO
                   </a>
                 </p>
@@ -172,29 +172,19 @@ const VEVOContentPage = () => {
                 </h2>
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed mb-4">
                   Registered organisations can{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 border-b border-blue-600 pb-1 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     check someone's visa details
-                    <span className="inline-block ml-1">
-                      <svg className="w-3 h-3" viewBox="0 0 12 12" fill="currentColor">
-                        <path d="M6.5 1.75a.75.75 0 0 0-1.5 0V5H1.75a.75.75 0 0 0 0 1.5H5v3.25a.75.75 0 0 0 1.5 0V6.5h3.25a.75.75 0 0 0 0-1.5H6.5V1.75Z"/>
-                      </svg>
-                    </span>
                   </a>.
                 </p>
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed mb-4">
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 border-b border-blue-600 pb-1 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     Register for an ImmiAccount
-                    <span className="inline-block ml-1">
-                      <svg className="w-3 h-3" viewBox="0 0 12 12" fill="currentColor">
-                        <path d="M6.5 1.75a.75.75 0 0 0-1.5 0V5H1.75a.75.75 0 0 0 0 1.5H5v3.25a.75.75 0 0 0 1.5 0V6.5h3.25a.75.75 0 0 0 0-1.5H6.5V1.75Z"/>
-                      </svg>
-                    </span>
                   </a>{' '}
                   and then use VEVO to see the visa conditions of visa holders who have given you permission.
                 </p>
                 <p className="text-gray-700 text-sm lg:text-base leading-relaxed">
                   Learn how to use{' '}
-                  <a href="#" className="text-blue-600 underline hover:text-blue-800 break-words">
+                  <a href="#" className="text-blue-600 hover:text-blue-800 break-words">
                     VEVO for organisations
                   </a>.
                 </p>
