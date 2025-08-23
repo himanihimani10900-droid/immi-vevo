@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
-} from 'react-router-dom';
+  Navigate,
+} from "react-router-dom";
 import "./App.css";
-import VisaCheckPage from './components/vevoPage1';
-import VEVOContentPage from './components/VEVOContentPage ';
-import Footer from './components/Footer';
+import VisaCheckPage from "./components/VevoFirstSlide";
+import VEVOContentPage from "./components/VEVOContentPage ";
+import Footer from "./components/Footer";
 
 const MainContent = () => (
   <div>
@@ -32,7 +32,10 @@ const App = () => {
         <Route
           path="/"
           element={
-            <Navigate to="/homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online" replace />
+            <Navigate
+              to="/homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online"
+              replace
+            />
           }
         />
 
@@ -40,7 +43,10 @@ const App = () => {
         <Route
           path="*"
           element={
-            <Navigate to="/homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online" replace />
+            <Navigate
+              to="/homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/check-conditions-online"
+              replace
+            />
           }
         />
       </Routes>
